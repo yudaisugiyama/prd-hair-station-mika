@@ -1,10 +1,10 @@
 # Hair Station Mika
 
-Reasion: us-west1 (oregon)
+>Reasion: us-west1 (oregon)
 Zone: us-west1-a
 
 ## Get Started
-## SSH settings
+### SSH settings
 ```
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/web-server-hair-station-mika -N '' -C 'web-server-hair-station-mika' 
 cat ~/.ssh/web-server-hair-station-mika.pub
@@ -17,21 +17,17 @@ scp -i ~/.ssh/web-server-hair-station-mika /Users/YudaiSugiyama/Github/hair_stat
 scp -i ~/.ssh/web-server-hair-station-mika -r assets web-server-hair-station-mika@104.198.96.84:~/
 ```
 
-## Install Apache and PHP
+### Install Apache
 
 ```
 sudo apt-get -y install apache2
 sudo apache2 -v
-sudo apt-ge -y install php
-php -v
 sudo mv /var/www/html/index.html /var/www/html/index.
-sudo vim /var/www/html/index.php
 ```
 
-[Setup](https://zenn.dev/knockknock/articles/10aa24fde47c45)
+[detail](https://zenn.dev/knockknock/articles/10aa24fde47c45)
 
-## Apache Command
-
+### Apache Command
 ```
 sudo systemctl start apache2
 sudo systemctl stop apache2
