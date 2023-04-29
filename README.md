@@ -1,7 +1,7 @@
 # Hair Station Mika
 
->Reasion: us-west1 (oregon)
-Zone: us-west1-a
+>REGION: us-west1
+>ZONE: us-west1-a
 
 ## Get Started
 ### SSH settings
