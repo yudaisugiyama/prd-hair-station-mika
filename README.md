@@ -82,9 +82,15 @@ sudo apt-get install tmux
 ### tmux Command
 ```
 tmux
-Ctrl + b, s
-Ctrl + b, p
-Ctrl + b, n
-Ctrl + b, ↑
-tmux kill-session
+tmux a -t 0
+"
+%
+x
+&
+```
+
+### Update
+```
+node server.js
+
 ```
