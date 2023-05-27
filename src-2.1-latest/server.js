@@ -10,20 +10,24 @@ app.listen(PORT, () => {
 });
 
 app.get("/", (req, res) => {
+    var userAgent = req.headers['user-agent'];
+    var referer = req.headers['referer'];
+    console.log(userAgent)
+    console.log(referer)
     res.render("index");
 });
 app.get("/staff", (req, res) => {
-    res.render("staff", {text: "実装中です。暫くお待ち下さい。"});
+    res.render("staff");
 });
 app.get("/fee", (req, res) => {
-    res.render("fee", {text: "実装中です。暫くお待ち下さい。"});
+    res.render("fee");
 });
 app.get("/product", (req, res) => {
-    res.render("product", {text: "実装中です。暫くお待ち下さい。"});
+    res.render("product");
 });
 app.get("/access", (req, res) => {
-    res.render("access", {text: "実装中です。暫くお待ち下さい。"});
+    res.render("access");
 });
 app.get("/contact", (req, res) => {
-    res.render("contact", {text: "実装中です。暫くお待ち下さい。"});
+    res.render("contact");
 });

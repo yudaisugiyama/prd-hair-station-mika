@@ -16,19 +16,19 @@ window.addEventListener('scroll', function() {
     var container = document.querySelectorAll('.fade-in-container');
 
     // スクロール位置に応じて.showを付与
-    if (currentPosition > 30) {
+    if (currentPosition > 50) {
         container[0].classList.add('show');
     }
-    if (currentPosition > 400) {
+    if (currentPosition > 420) {
         container[1].classList.add('show');
     }
-    if (currentPosition > 750) {
+    if (currentPosition > 770) {
         container[2].classList.add('show');
     }
-    if (currentPosition > 1050) {
+    if (currentPosition > 1070) {
         container[3].classList.add('show');
     }
-    if (currentPosition > 1100) {
+    if (currentPosition > 1120) {
         container[4].classList.add('show');
     }
 });

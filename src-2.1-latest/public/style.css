@@ -19,6 +19,10 @@ a:hover {
     transition: left 0.2s ease, top 0.2s ease;
 }
 
+h5 {
+    border-left: solid 5px #fff5f5;
+}
+
 
 /* ヘッダー */
 header {
@@ -36,7 +40,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    width: 350px;
+    width: 80%;
     opacity: 0.7;
 }
 
@@ -47,6 +51,7 @@ header {
     width: 600px;
     transform: rotate(90deg);
     transform-origin: bottom left;
+    padding-bottom: 15px;
 }
 
 .navbar ul {
@@ -120,7 +125,8 @@ header {
 
 .left-container p,
 .right-container p {
-    font-size: 7px;
+    font-weight: bold;
+    font-size: 0.5rem;
 }
 
 .show {
@@ -135,7 +141,7 @@ header {
 
 button {
     margin-top: 10px;
-    width: 200px;
+    width: 180px;
     height: 25px;
     border: 1px solid black;
     background-color: #fff5f5;
@@ -177,6 +183,19 @@ footer {
 }
 
 .comment {
-    margin: 100px 0;
+    margin: 100px 15px;
     font-size: 0.8rem;
+    height: auto;
+}
+
+.container {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 80%;
+    font-size: 0.8rem;
+}
+
+.container p{
+    margin-right: 15px;
 }
