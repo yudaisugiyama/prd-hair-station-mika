@@ -14,7 +14,7 @@ cat ~/.ssh/web-server-hair-station-mika.pub
 ```
 ssh -i ~/.ssh/web-server-hair-station-mika web-server-hair-station-mika@104.198.96.84
 scp -i ~/.ssh/web-server-hair-station-mika /Users/YudaiSugiyama/Github/hair_station_mika/src/index.html web-server-hair-station-mika@104.198.96.84:/var/www/html/index.html
-scp -i ~/.ssh/web-server-hair-station-mika -r assets web-server-hair-station-mika@104.198.96.84:~/
+scp -i ~/.ssh/web-server-hair-station-mika -r src web-server-hair-station-mika@104.198.96.84:~/
 ```
 
 ### Install Apache
@@ -91,6 +91,9 @@ x
 
 ### Update
 ```
+scp -i ~/.ssh/web-server-hair-station-mika -r src/public/ web-server-hair-station-mika@104.198.96.84:~/src/
+tmux a -t 0
+Control + b, ↑
 node server.js
-
+sudo systemctl restart nginx
 ```

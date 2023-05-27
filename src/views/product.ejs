@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <%- include('_head.ejs')%>
+    <link rel="stylesheet" href="product-style.css">
+</head>
+<body>
+    <a href="/"><img class="overlay-img" src="assets/img/icon/hair-station-mika-logo.png" alt=""></a>
+    <div id="follower"><img src="assets/img/icon/favicon.png" alt=""></div>
+
+    <header>
+        <div class="navbar">
+            <%- include('_navbar.ejs')%>
+        </div>
+    </header>
+
+    <div class="container">
+        <h5>商品一覧</h5>
+        
+        <div class="flex-container">
+            <img class="medium-img" src="assets/img/louvredo/83296.jpg" alt="">
+            <div>
+                <img class="small-img" src="assets/img/louvredo/83295.jpg" alt="">
+                <img class="small-img" src="assets/img/louvredo/83290.jpg" alt="">
+            </div>
+        </div>
+        <img class="large-img" src="assets/img/louvredo/83292.jpg" alt="">
+        <div class="flex-container">
+            <div>
+                <img class="small-img" src="assets/img/louvredo/83294.jpg" alt="">
+                <img class="small-img" src="assets/img/louvredo/fukugen-mini.jpg" alt="">
+            </div>
+            <div>
+                <img class="small-img" src="assets/img/louvredo/83291.jpg" alt="">
+                <img class="small-img" src="assets/img/louvredo/83293.jpg" alt="">
+            </div>
+        </div>
+        <img class="large-img" src="assets/img/louvredo/83297.jpg" alt="">
+
+
+        <div class="comment">
+            <P>※在庫がない場合はお取り寄せいたします。在庫状況はご気軽にお問い合わせくださいませ。</P>
+        </div>
+    </div>
+
+    <footer>
+        <%- include('_footer.ejs')%>
+    </footer>
+</body>
+</html>
