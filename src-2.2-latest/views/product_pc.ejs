@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <%- include('_head.ejs')%>
+    <style>
+        header {
+            height: 5200px;
+            margin-bottom: 50px;
+        }
+
+        img {
+            z-index: -20;
+        }
+
+        .medium-img {
+            width: 50%;
+        }
+
+        .large-img,
+        .child-img {
+            width: 100%;
+        }
+
+        .comment {
+            margin: 100px 15px 50px 15px;
+        }
+    </style>
+</head>
+<body>
+    <a href="/"><img class="overlay-img" src="assets/img/icon/hair-station-mika-logo.png" alt=""></a>
+    <div id="follower"><img src="assets/img/icon/favicon.png" alt=""></div>
+
+    <header>
+        <div class="navbar">
+            <%- include('_navbar.ejs')%>
+        </div>
+    </header>
+
+    <div class="container">
+        <h5>商品一覧</h5>
+        
+        <div class="flex-container">
+            <img class="medium-img" src="assets/img/louvredo/01_fukugen-styler.jpg" alt="">
+            <div>
+                <a href="https://my.ebook5.net/LOUVREDO/fukugen_pro/" target="_blank" rel="noopener noreferrer">
+                    <img class="small-img" src="assets/img/louvredo/02_fukugen-pro.jpg" alt="">
+                </a>
+                <a href="https://my.ebook5.net/LOUVREDO/PaddleBrush/" target="_blank" rel="noopener noreferrer">
+                    <img class="small-img" src="assets/img/louvredo/03_paddle-brush.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <a href="https://my.ebook5.net/LOUVREDO/fukugen_pro/" target="_blank" rel="noopener noreferrer">
+            <img class="large-img" src="assets/img/louvredo/04_fukugen-pro.jpg" alt="">
+        </a>
+        <div class="flex-container">
+            <div>
+                <a href="https://my.ebook5.net/LOUVREDO/fukugen_pro/" target="_blank" rel="noopener noreferrer">
+                    <img class="small-img" src="assets/img/louvredo/05_fukugen-pro.jpg" alt="">
+                </a>
+                <a href="https://my.ebook5.net/LOUVREDO/fukugen_mini/" target="_blank" rel="noopener noreferrer">
+                    <img class="small-img" src="assets/img/louvredo/06_fukugen-mini.jpg" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="https://my.ebook5.net/LOUVREDO/FUKUGEN_Styler/" target="_blank" rel="noopener noreferrer">
+                    <img class="small-img" src="assets/img/louvredo/07_fukugen-styler.jpg" alt="">
+                </a>
+                <a href="https://my.ebook5.net/LOUVREDO/fukugen_pro/" target="_blank" rel="noopener noreferrer">
+                    <img class="small-img" src="assets/img/louvredo/08_fukugen-pro.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <a href="https://my.ebook5.net/LOUVREDO/fukugen_mini/" target="_blank" rel="noopener noreferrer">
+            <img class="large-img" src="assets/img/louvredo/09_fukugen-mini.jpg" alt="">
+        </a>
+        <div class="flex-container">
+            <div>
+                <a href="https://my.ebook5.net/LOUVREDO/fukugen_pro/" target="_blank" rel="noopener noreferrer">
+                    <img class="small-img" src="assets/img/louvredo/10_fukugen-pro.jpg" alt="">
+                </a>
+            </div>
+            <a href="https://my.ebook5.net/LOUVREDO/PaddleBrush/" target="_blank" rel="noopener noreferrer">
+                <img class="medium-img" src="assets/img/louvredo/11_paddle-brush.jpg" alt="">
+            </a>
+        </div>
+
+
+        <div class="comment">
+            <P>※在庫がない場合はお取り寄せいたします。在庫状況はお気軽にお問い合わせくださいませ。</P>
+        </div>
+    </div>
+
+    <footer>
+        <%- include('_footer.ejs')%>
+    </footer>
+</body>
+</html>

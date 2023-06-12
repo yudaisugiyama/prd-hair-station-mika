@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <%- include('_head.ejs')%>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-size: 0.8rem;
+            margin: 10px 0;
+            width: 90%;
+            left: 0;
+        }
+
+        td {
+            padding: 3px auto;
+            text-align: center;
+        }
+
+        hr {
+            margin: 50px 0;
+            border-color: #e6e6e6;
+            text-align: center;
+            width: 80%;
+        }
+
+        .td-l {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <a href="/"><img class="overlay-img" src="assets/img/icon/hair-station-mika-logo.png" alt=""></a>
+    <div id="follower"><img src="assets/img/icon/favicon.png" alt=""></div>
+
+    <header>
+        <div class="navbar">
+            <%- include('_navbar.ejs')%>
+        </div>
+    </header>
+
+    <div class="container">
+        <h5>メニュー</h5>
+        <table>
+            <tr>
+                <td class="td-l">カット</td>
+                <td>4,000~</td>
+            </tr>
+            <tr>
+                <td class="td-l">パーマ</td>
+                <td>9,500~</td>
+            </tr>
+            <tr>
+                <td class="td-l">カラー</td>
+                <td>5,800~</td>
+            </tr>
+        </table>
+        <hr>
+        <h5>その他</h5>
+        <table>
+            <tr>
+                <td></td>
+                <td>15分</td>
+                <td>30分</td>
+            </tr>
+            <tr>
+                <td class="td-l">ドライヘッドスパ</td>
+                <td>1,000</td>
+                <td>1,800</td>
+            </tr>
+        </table>
+        <div class="comment">
+            <P>※価格は全て税抜価格です。</P>
+            <P>※その他記載のないメニューはお問い合わせくださいませ。</P>
+        </div>
+    </div>
+
+    <footer>
+        <%- include('_footer.ejs')%>
+    </footer>
+</body>
+</html>
