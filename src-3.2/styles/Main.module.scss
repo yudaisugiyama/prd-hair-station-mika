@@ -1,0 +1,32 @@
+// _valiablesを読み込み
+@use 'valiables/valiables' as v;
+
+.main{
+    .wrapper {
+        position: relative;
+        z-index: 20;
+        background-color: #ffffff;
+        padding: 15vh 20px;
+        height: 70vh;
+        text-align: center;
+
+        img {
+            width: 70vw;
+            padding-bottom: 15px;
+        }
+        h1 {
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+        button {
+            margin: 20px;
+            width: 180px;
+            height: 30px;
+            border: 1px solid rgba(41, 45, 45, 0.5);
+            background-color: v.$primary-color;
+        }
+    }
+}
