@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
+
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
