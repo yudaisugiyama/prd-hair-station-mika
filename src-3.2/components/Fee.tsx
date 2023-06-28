@@ -6,54 +6,70 @@ export function Fee() {
     <div className="page__template">
         <h1>料金</h1>
         <div className={styles.fee__table__container}>
+        <h2>ヘアメニュー</h2>
         <table>
             <tbody>
             <tr>
-                <td>商品A</td>
-                <td>1000円</td>
+                <td>カット</td>
+                <td>4,000円~</td>
             </tr>
             <tr>
-                <td>商品B</td>
-                <td>2000円</td>
+                <td>パーマ</td>
+                <td>9,500円~</td>
             </tr>
             <tr>
-                <td>商品C</td>
-                <td>1500円</td>
+                <td>カラー</td>
+                <td>5,800円~</td>
+            </tr>
+            </tbody>
+        </table>
+        <h2>ドライヘッドスパ</h2>
+        <table>
+            <tbody>
+            <tr>
+                <td>15分</td>
+                <td>30分</td>
+            </tr>
+            <tr>
+                <td>1,000円</td>
+                <td>1,800円</td>
             </tr>
             </tbody>
         </table>
         </div>
-        <h2>長谷川 芳子 / HASEGAWA YOHIKO</h2>
         <br />
         <p>|</p>
         <br />
-        <p>お客様には美容の面からだけでなく</p>
-        <p>アロマの面からも美しさをご提供させていただきます</p>
+        <p>価格はすべて税込みです</p>
         <br />
         <p>|</p>
         <br />
-        <p>美容師</p>
-        <p>心身アロマ気功師</p>
-        <p>フットセラピスト</p>
+        <p>その他記載のないメニューについては</p>
+        <p>お問い合わせくださいませ</p>
+        <br />
+        <p>|</p>
+        <br />
+        <p>下のメニューボードは古い物ですが</p>
+        <p>参考までに御覧くださいませ</p>
         <br />
         <p>|</p>
         <br />
         <Image
-        src="/assets/img/hasegawa__yoshiko_1.jpg"
+        src="/assets/img/fee__image_1.jpg"
+        alt="logo"
+        width={420}
+        height={280}
+        style={{width: "100%", height: "auto", opacity: "0.8" }}
+        />
+        <Image
+        src="/assets/img/fee__image_2.jpg"
         alt="logo"
         width={420}
         height={280}
         style={{width: "100%", height: "auto" }}
         />
         <Image
-        src="/assets/img/hasegawa__yoshiko_2.jpg"
-        alt="logo"
-        width={420}
-        height={280}
-        style={{width: "100%", height: "auto" }}
-        />
-        <Image
-        src="/assets/img/hasegawa__yoshiko_3.jpg"
+        src="/assets/img/fee__image_3.jpg"
         alt="logo"
         width={420}
         height={280}

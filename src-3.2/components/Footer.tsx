@@ -36,7 +36,7 @@ export function Footer() {
             <a href="https://www.youtube.com/@user-mr1gm4hk1i">
                 <Image
                     src="/assets/img/youtube.svg.png"
-                    alt="Instagram"
+                    alt="Youtube"
                     width={30}
                     height={20}
                     style={{ margin: "5px auto 5px auto "}}/>
