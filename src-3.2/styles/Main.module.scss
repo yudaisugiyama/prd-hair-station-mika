@@ -1,32 +1,68 @@
-// _valiablesを読み込み
 @use 'valiables/valiables' as v;
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+@keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 
 .main{
-    .wrapper {
-        position: relative;
-        z-index: 20;
-        background-color: #ffffff;
-        padding: 15vh 20px;
-        height: 70vh;
-        text-align: center;
+  .wrapper {
+    position: relative;
+    z-index: 20;
+    background-color: v.$color-white;
+    height: 425px;
+    text-align: center;
+    padding: 50px 0 50px 0;
 
-        img {
-            width: 70vw;
-            padding-bottom: 15px;
-        }
-        h1 {
-            font-weight: bold;
-            padding-bottom: 10px;
-        }
-        p {
-            font-size: 0.8rem;
-        }
-        button {
-            margin: 20px;
-            width: 180px;
-            height: 30px;
-            border: 1px solid rgba(41, 45, 45, 0.5);
-            background-color: v.$primary-color;
-        }
+    @media (min-width: v.$pc-width) {
+      margin-bottom: 20vw;
     }
+
+    .animate__slideInLeft {
+        animation: slideInLeft 1s;
+        h1 {
+          font-weight: bold;
+          margin: 20px;
+          color: v.$accsent-color;
+      }
+  
+      p {
+          font-size: 0.8rem;
+      }
+  
+      button {
+          width: 180px;
+          height: 30px;
+          border: 0.5px solid v.$secondary-color;
+          font-size: 0.8rem;
+          color: v.$accsent-color;
+          &:hover {
+            background-color: v.$primary-color;
+          }
+      }
+
+      div {
+        margin: 20px;
+      }
+    }
+
+    .animate__slideInRight {
+        animation: slideInRight 1s;
+    }
+
+    .image {
+        margin-bottom: 15px;
+    }
+  }
 }

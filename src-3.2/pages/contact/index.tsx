@@ -1,0 +1,17 @@
+import { Header } from "../../components/Header";
+import { Contact } from "../../components/Contact";
+import { Footer } from "../../components/Footer";
+import home from '../../styles/Home.module.scss'
+import main from '../../styles/Main.module.scss'
+
+export default function ContactPage() {
+    return (
+        <div className={home.container}>
+          <Header pathname={"/contact"}/>
+          <main className={main.main}>
+            <Contact/>
+          </main>
+          <Footer />
+        </div>
+    );
+};

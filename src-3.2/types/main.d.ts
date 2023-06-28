@@ -1,7 +1,7 @@
 type MainProps = {
     title: string;
     img: string;
-    url: string;
+    pathname: string;
     description1: string;
     description2: string;
     buttonText: string;

@@ -1,3 +1,5 @@
+@use "valiables/valiables" as v;
+
 .container {
   .header {
     height: 100vh;
@@ -21,6 +23,13 @@
       li {
         display: inline-block;
         padding: 10px;
+        @media (min-width: 1000px) {
+          padding: 15px;
+        }
+      }
+      @media (min-width: 1000px) {
+        top: 80px;
+        left: 20px;
       }
     }
 
@@ -31,9 +40,19 @@
       height: 100vh;
       opacity: 0.6;
       z-index: 0;
+      @media (min-width: v.$sp-width) {
+        opacity: 1;
+    }
+    }
+
+    a {
+      text-decoration: none;
+      border-bottom: 4px solid transparent;
+      transition: border-bottom 0.5s;
+
+      &:hover {
+        border-bottom: 4px solid;
+      }
     }
   }
 }
-  
-  @media (max-width: 600px) {
-  }

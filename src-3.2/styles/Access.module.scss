@@ -1,0 +1,9 @@
+@use "valiables/valiables" as v;
+
+.google__map {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  iframe {
+    margin-left: 10%;
+  }
+}
