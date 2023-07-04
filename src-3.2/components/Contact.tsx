@@ -17,8 +17,8 @@ export function Contact() {
         <br />
         <p>|</p>
         <br />
-        <p className={styles.stand__out}>ご予約や商品に関する質問等は</p>
-        <p className={styles.stand__out}>上記の電話番号よりお気軽にお問い合わせください</p>
+        <p>ご予約や商品に関する質問等は</p>
+        <p>上記の電話番号よりお気軽にお問い合わせください</p>
         <br />
         <p>|</p>
         <br />

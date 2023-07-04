@@ -49,18 +49,13 @@ export function Fee() {
         <br />
         <p>|</p>
         <br />
-        <p>下のメニューボードは古い物ですが</p>
-        <p>参考までに御覧くださいませ</p>
-        <br />
-        <p>|</p>
-        <br />
-        <Image
+        {/* <Image
         src="/assets/img/fee__image_1.jpg"
         alt="logo"
         width={420}
         height={280}
         style={{width: "100%", height: "auto", opacity: "0.8" }}
-        />
+        /> */}
         <Image
         src="/assets/img/fee__image_2.jpg"
         alt="logo"
