@@ -21,12 +21,15 @@
     position: relative;
     z-index: 20;
     background-color: v.$color-white;
-    height: 425px;
+    height: 500px;
     text-align: center;
     padding: 50px 0 50px 0;
 
+    @media (min-width: v.$tb-width) and (max-width: v.$pc-width) {
+      margin-bottom: 140px;
+    }
     @media (min-width: v.$pc-width) {
-      margin-bottom: 20vw;
+      margin-bottom: 300px;
     }
 
     .animate__slideInLeft {
@@ -35,25 +38,42 @@
           font-weight: bold;
           margin: 20px;
           color: v.$accsent-color;
+          @media (min-width: v.$pc-width) {
+            margin: 40px;
+          }
       }
   
       p {
           font-size: 0.8rem;
+          @media (min-width: v.$pc-width) {
+            font-size: 1.0rem;
+          }
       }
   
       button {
           width: 180px;
           height: 30px;
-          border: 0.5px solid v.$secondary-color;
+          border: 0.5px solid v.$color-black;
           font-size: 0.8rem;
           color: v.$accsent-color;
           &:hover {
+            border: 0.5px solid v.$secondary-color;
             background-color: v.$primary-color;
+            color: v.$color-white;
+            transition: background-color 0.2s, color 0.5s;
+          }
+          @media (min-width: v.$pc-width) {
+            width: 300px;
+            height: 60px;
+            font-size: 1.0rem;
           }
       }
 
       div {
         margin: 20px;
+        @media (min-width: v.$pc-width) {
+          margin: 40px;
+        }
       }
     }
 

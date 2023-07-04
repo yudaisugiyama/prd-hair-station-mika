@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useWindowWidth } from "./Main";
 import { useRouter } from 'next/router'; 
 import ProductImageProps from '../types/product';
 import styles from '../styles/Product.module.scss'
@@ -8,14 +9,22 @@ export function ProductImage({ url, src }: ProductImageProps) {
     const handleClick = () => {
       router.push(url);
     };
+
+    const { windowWidth, spWidth, tbWidth, pcWidth } = useWindowWidth();
+    const width: number = windowWidth > pcWidth ? Math.floor(windowWidth * 0.6 * 0.6) : Math.floor(windowWidth * 0.6);
+
     return (
         <>
             <Image
             src={src}
             alt="product image"
-            width={420}
-            height={280}
-            style={{width: "100%", height: "auto" }}
+            width={width}
+            height={width}
+            style={
+              windowWidth < tbWidth
+                ? { width: "100%", height: "auto" }
+                : { display: 'block', margin: 'auto', height: 'auto' }
+            }
             onClick={handleClick}
             />
         </>

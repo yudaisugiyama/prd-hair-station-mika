@@ -114,20 +114,14 @@ body {
 }
 
 h1 {
-    @media (min-width: 1000px) {
+    @media (min-width: v.$pc-width) {
       font-size: 2rem;
   }
 }
 
 p,
-h3,
-li,
-div,
-section,
-.description,
-.navigation__button,
-.animate__slideInLeft {
-  @media (min-width: 1000px) {
+h3 {
+  @media (min-width: v.$tb-width) {
     font-size: 1.0rem;
   }
 }
@@ -145,7 +139,7 @@ section,
   }
 
   h2 {
-    text-align: right;
+    text-align: center;
     margin: 30px;
   }
 
@@ -153,18 +147,14 @@ section,
   p {
     text-align: center;
     font-size: 0.8rem;
+    @media (min-width: v.$tb-width) and (max-width: v.$pc-width) {
+      font-size: 1.0rem;
+    }
+    @media (min-width: v.$pc-width) {
+      font-size: 1.2rem;
+    }
   }
 }
-
-// .photographer {
-//   display: flex;
-
-//   p {
-//     text-align: right;
-//     margin: 7px 30px 8px auto;
-//     color: v.$border-color-light-gray;
-//   }
-// }
 
 .photographer {
   display: flex;

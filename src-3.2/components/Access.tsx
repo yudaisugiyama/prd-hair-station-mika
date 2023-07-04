@@ -1,7 +1,11 @@
 import Image from 'next/image';
+import { useWindowWidth } from "./Main";
 import styles from '../styles/Access.module.scss'
 
 export function Access() {
+  const { windowWidth, spWidth, tbWidth, pcWidth } = useWindowWidth();
+  const width: number = windowWidth > pcWidth ? Math.floor(windowWidth * 0.6 * 0.6) : Math.floor(windowWidth * 0.6);
+
   return (
     <div className="page__template">
         <h1>MAP</h1>
@@ -29,23 +33,35 @@ export function Access() {
         <Image
         src="/assets/img/access__image_1.jpg"
         alt="logo"
-        width={420}
-        height={280}
-        style={{width: "100%", height: "auto" }}
+        width={width}
+        height={width}
+        style={
+            windowWidth < tbWidth
+              ? { width: "100%", height: "auto" }
+              : { display: 'block', margin: 'auto', height: 'auto' }
+          }
         />
         <Image
         src="/assets/img/access__image_2.jpg"
         alt="logo"
-        width={420}
-        height={280}
-        style={{width: "100%", height: "auto" }}
+        width={width}
+        height={width}
+        style={
+            windowWidth < tbWidth
+              ? { width: "100%", height: "auto" }
+              : { display: 'block', margin: 'auto', height: 'auto' }
+          }
         />
         <Image
         src="/assets/img/access__image_3.jpg"
         alt="logo"
-        width={420}
-        height={280}
-        style={{width: "100%", height: "auto" }}
+        width={width}
+        height={width}
+        style={
+            windowWidth < tbWidth
+              ? { width: "100%", height: "auto" }
+              : { display: 'block', margin: 'auto', height: 'auto' }
+          }
         />
     </div>
   );

@@ -20,16 +20,16 @@
       width: 100vh;
       transform-origin: bottom left;
       transform: rotate(90deg);
+      @media (min-width: v.$pc-width) {
+        top: 80px;
+        left: 20px;
+      }
       li {
         display: inline-block;
         padding: 10px;
-        @media (min-width: 1000px) {
+        @media (min-width: v.$pc-width) {
           padding: 15px;
         }
-      }
-      @media (min-width: 1000px) {
-        top: 80px;
-        left: 20px;
       }
     }
 

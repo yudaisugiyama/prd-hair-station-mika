@@ -6,7 +6,10 @@ import styles from '../styles/Main.module.scss'
 import { useInView } from 'react-intersection-observer';
 
 export function useWindowWidth() {
-    const [width, setWidth] = useState<number>(0);
+    const spWidth = 480;
+    const tbWidth = 748;
+    const pcWidth = 1024;
+    const [windowWidth, setWidth] = useState<number>(0);
     useEffect(() => {
         function handleResize() {
             setWidth(window.innerWidth);
@@ -18,7 +21,7 @@ export function useWindowWidth() {
         };
     }, []);
 
-    return width;
+    return { windowWidth, spWidth, tbWidth, pcWidth };
 }
 
 export function useWindowSize() {
@@ -46,8 +49,8 @@ export function Main({ title, img, pathname, description1, description2, buttonT
     const handleClick: () =>void = () => {
         router.push(`${pathname}`);
     }
-    const windowWidth: number = useWindowWidth();
-    const width: number = windowWidth > 480 ? Math.floor(windowWidth * 0.6 * 0.6) : Math.floor(windowWidth * 0.6);
+    const { windowWidth, spWidth, tbWidth, pcWidth } = useWindowWidth();
+    const width: number = windowWidth > pcWidth ? Math.floor(windowWidth * 0.6 * 0.6) : Math.floor(windowWidth * 0.6);
 
     var className;
     if (`${animateClass}` === 'animate__slideInLeft') {
@@ -71,10 +74,10 @@ export function Main({ title, img, pathname, description1, description2, buttonT
             <div className={className}>
                 <h1>{title}</h1>
                 <div>
-                    <p className="description">{description1}</p>
-                    <p className="description">{description2}</p>
+                    <p>{description1}</p>
+                    <p>{description2}</p>
                 </div>
-                <button className="navigation__button" onClick={handleClick}>{buttonText}</button>
+                <button onClick={handleClick}>{buttonText}</button>
             </div>
         )}
     </section>
