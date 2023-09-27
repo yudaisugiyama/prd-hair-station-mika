@@ -1,0 +1,29 @@
+@use 'valiables/valiables' as v;
+
+.fee__table__container {
+    
+    table {
+        text-align: right;
+        border-collapse: collapse;
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+        width: 85%;
+        margin-left: 10%;
+        @media (min-width: v.$tb-width) {
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+          }
+    }
+
+    td {
+        padding: 3px auto;
+        padding-right: 30px;
+    }
+
+    h2 {
+        background-color: v.$primary-color;
+        text-align: left;
+        margin-left: 15%;
+        padding: 2px 5px;
+    }
+}

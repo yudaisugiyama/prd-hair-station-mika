@@ -1,0 +1,16 @@
+@use "valiables/valiables" as v;
+
+.google__map {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  iframe {
+    margin-left: 10%;
+    border: none;
+    @media (min-width: v.$tb-width) and (max-width: v.$pc-width) {
+      height: 425px;
+    }
+    @media (min-width: v.$pc-width) {
+      height: 550px;
+    }
+  }
+}

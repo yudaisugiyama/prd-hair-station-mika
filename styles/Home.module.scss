@@ -1,0 +1,58 @@
+@use "valiables/valiables" as v;
+
+.container {
+  .header {
+    height: 100vh;
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 70vw;
+      z-index: 10;
+    }
+
+    .navigation {
+      position: absolute;
+      z-index: 10;
+      top: 20px;
+      left: 0;
+      width: 100vh;
+      transform-origin: bottom left;
+      transform: rotate(90deg);
+      @media (min-width: v.$pc-width) {
+        top: 80px;
+        left: 20px;
+      }
+      li {
+        display: inline-block;
+        padding: 10px;
+        @media (min-width: v.$pc-width) {
+          padding: 15px;
+        }
+      }
+    }
+
+    .main__visual {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      opacity: 0.6;
+      z-index: 0;
+      @media (min-width: v.$sp-width) {
+        opacity: 1;
+    }
+    }
+
+    a {
+      text-decoration: none;
+      border-bottom: 4px solid transparent;
+      transition: border-bottom 0.5s;
+
+      &:hover {
+        border-bottom: 4px solid;
+      }
+    }
+  }
+}
