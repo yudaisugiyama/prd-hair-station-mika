@@ -93,6 +93,11 @@ tmux a -t 0
 
 11. Start project.
 ```
-npm build
+npm run build
 npm start
+```
+
+12. Restart Nginx.
+```
+sudo systemctl restart nginx
 ```
